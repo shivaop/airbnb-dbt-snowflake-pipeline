@@ -1,0 +1,12 @@
+{{
+    config(materialized='ephemeral')
+}}
+
+SELECT DISTINCT
+    HOST_ID,
+    HOST_NAME,
+    HOST_SINCE,
+    IS_SUPERHOST,
+    RESPONSE_RATE_QUALITY,
+    HOST_CREATED_AT
+FROM {{ ref('obt') }}

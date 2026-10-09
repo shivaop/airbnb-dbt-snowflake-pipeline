@@ -1,0 +1,14 @@
+
+# dbt runtime artifacts
+target/
+dbt_packages/
+logs/
+
+# Local connection settings: never commit credentials.
+profiles.yml
+ExampleProfiles.yml
+.user.yml
+
+# Editor and operating-system files
+.DS_Store
+.vscode/

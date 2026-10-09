@@ -1,0 +1,13 @@
+aws_dbt_snowflake_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "<your_snowflake_account_identifier>"
+      user: "<your_snowflake_username>"
+      password: "<your_snowflake_password>"
+      role: "<your_snowflake_role>"
+      database: "AIRBNB"
+      warehouse: "COMPUTE_WH"
+      schema: "dbt_schema"
+      threads: 4
